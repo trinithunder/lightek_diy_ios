@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37B0787B2D89FD1400EB9ED2 /* lightek_diyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */; };
+		37B0787D2D89FD1400EB9ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787C2D89FD1400EB9ED2 /* ContentView.swift */; };
+		37B0787F2D89FD1800EB9ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B0787E2D89FD1800EB9ED2 /* Assets.xcassets */; };
+		37B078822D89FD1800EB9ED2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B078812D89FD1800EB9ED2 /* Preview Assets.xcassets */; };
+		37B0788C2D89FD1900EB9ED2 /* lightek_diyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0788B2D89FD1900EB9ED2 /* lightek_diyTests.swift */; };
+		37B078962D89FD1900EB9ED2 /* lightek_diyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B078952D89FD1900EB9ED2 /* lightek_diyUITests.swift */; };
+		37B078982D89FD1900EB9ED2 /* lightek_diyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B078972D89FD1900EB9ED2 /* lightek_diyUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37B078882D89FD1900EB9ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B0786F2D89FD1400EB9ED2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37B078762D89FD1400EB9ED2;
+			remoteInfo = "lightek-diy";
+		};
+		37B078922D89FD1900EB9ED2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37B0786F2D89FD1400EB9ED2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37B078762D89FD1400EB9ED2;
+			remoteInfo = "lightek-diy";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37B078772D89FD1400EB9ED2 /* lightek-diy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lightek-diy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightek_diyApp.swift; sourceTree = "<group>"; };
+		37B0787C2D89FD1400EB9ED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37B0787E2D89FD1800EB9ED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37B078812D89FD1800EB9ED2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37B078872D89FD1900EB9ED2 /* lightek-diyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lightek-diyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B0788B2D89FD1900EB9ED2 /* lightek_diyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightek_diyTests.swift; sourceTree = "<group>"; };
+		37B078912D89FD1900EB9ED2 /* lightek-diyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "lightek-diyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37B078952D89FD1900EB9ED2 /* lightek_diyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightek_diyUITests.swift; sourceTree = "<group>"; };
+		37B078972D89FD1900EB9ED2 /* lightek_diyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightek_diyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37B078742D89FD1400EB9ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B078842D89FD1900EB9ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B0788E2D89FD1900EB9ED2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37B0786E2D89FD1400EB9ED2 = {
+			isa = PBXGroup;
+			children = (
+				37B078792D89FD1400EB9ED2 /* lightek-diy */,
+				37B0788A2D89FD1900EB9ED2 /* lightek-diyTests */,
+				37B078942D89FD1900EB9ED2 /* lightek-diyUITests */,
+				37B078782D89FD1400EB9ED2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37B078782D89FD1400EB9ED2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37B078772D89FD1400EB9ED2 /* lightek-diy.app */,
+				37B078872D89FD1900EB9ED2 /* lightek-diyTests.xctest */,
+				37B078912D89FD1900EB9ED2 /* lightek-diyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37B078792D89FD1400EB9ED2 /* lightek-diy */ = {
+			isa = PBXGroup;
+			children = (
+				37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */,
+				37B0787C2D89FD1400EB9ED2 /* ContentView.swift */,
+				37B0787E2D89FD1800EB9ED2 /* Assets.xcassets */,
+				37B078802D89FD1800EB9ED2 /* Preview Content */,
+			);
+			path = "lightek-diy";
+			sourceTree = "<group>";
+		};
+		37B078802D89FD1800EB9ED2 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37B078812D89FD1800EB9ED2 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37B0788A2D89FD1900EB9ED2 /* lightek-diyTests */ = {
+			isa = PBXGroup;
+			children = (
+				37B0788B2D89FD1900EB9ED2 /* lightek_diyTests.swift */,
+			);
+			path = "lightek-diyTests";
+			sourceTree = "<group>";
+		};
+		37B078942D89FD1900EB9ED2 /* lightek-diyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37B078952D89FD1900EB9ED2 /* lightek_diyUITests.swift */,
+				37B078972D89FD1900EB9ED2 /* lightek_diyUITestsLaunchTests.swift */,
+			);
+			path = "lightek-diyUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37B078762D89FD1400EB9ED2 /* lightek-diy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B0789B2D89FD1900EB9ED2 /* Build configuration list for PBXNativeTarget "lightek-diy" */;
+			buildPhases = (
+				37B078732D89FD1400EB9ED2 /* Sources */,
+				37B078742D89FD1400EB9ED2 /* Frameworks */,
+				37B078752D89FD1400EB9ED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "lightek-diy";
+			productName = "lightek-diy";
+			productReference = 37B078772D89FD1400EB9ED2 /* lightek-diy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37B078862D89FD1900EB9ED2 /* lightek-diyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B0789E2D89FD1900EB9ED2 /* Build configuration list for PBXNativeTarget "lightek-diyTests" */;
+			buildPhases = (
+				37B078832D89FD1900EB9ED2 /* Sources */,
+				37B078842D89FD1900EB9ED2 /* Frameworks */,
+				37B078852D89FD1900EB9ED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37B078892D89FD1900EB9ED2 /* PBXTargetDependency */,
+			);
+			name = "lightek-diyTests";
+			productName = "lightek-diyTests";
+			productReference = 37B078872D89FD1900EB9ED2 /* lightek-diyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37B078902D89FD1900EB9ED2 /* lightek-diyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37B078A12D89FD1900EB9ED2 /* Build configuration list for PBXNativeTarget "lightek-diyUITests" */;
+			buildPhases = (
+				37B0788D2D89FD1900EB9ED2 /* Sources */,
+				37B0788E2D89FD1900EB9ED2 /* Frameworks */,
+				37B0788F2D89FD1900EB9ED2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37B078932D89FD1900EB9ED2 /* PBXTargetDependency */,
+			);
+			name = "lightek-diyUITests";
+			productName = "lightek-diyUITests";
+			productReference = 37B078912D89FD1900EB9ED2 /* lightek-diyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37B0786F2D89FD1400EB9ED2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					37B078762D89FD1400EB9ED2 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					37B078862D89FD1900EB9ED2 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 37B078762D89FD1400EB9ED2;
+					};
+					37B078902D89FD1900EB9ED2 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 37B078762D89FD1400EB9ED2;
+					};
+				};
+			};
+			buildConfigurationList = 37B078722D89FD1400EB9ED2 /* Build configuration list for PBXProject "lightek-diy" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37B0786E2D89FD1400EB9ED2;
+			productRefGroup = 37B078782D89FD1400EB9ED2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37B078762D89FD1400EB9ED2 /* lightek-diy */,
+				37B078862D89FD1900EB9ED2 /* lightek-diyTests */,
+				37B078902D89FD1900EB9ED2 /* lightek-diyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37B078752D89FD1400EB9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B078822D89FD1800EB9ED2 /* Preview Assets.xcassets in Resources */,
+				37B0787F2D89FD1800EB9ED2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B078852D89FD1900EB9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B0788F2D89FD1900EB9ED2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37B078732D89FD1400EB9ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B0787D2D89FD1400EB9ED2 /* ContentView.swift in Sources */,
+				37B0787B2D89FD1400EB9ED2 /* lightek_diyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B078832D89FD1900EB9ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B0788C2D89FD1900EB9ED2 /* lightek_diyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37B0788D2D89FD1900EB9ED2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B078982D89FD1900EB9ED2 /* lightek_diyUITestsLaunchTests.swift in Sources */,
+				37B078962D89FD1900EB9ED2 /* lightek_diyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37B078892D89FD1900EB9ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37B078762D89FD1400EB9ED2 /* lightek-diy */;
+			targetProxy = 37B078882D89FD1900EB9ED2 /* PBXContainerItemProxy */;
+		};
+		37B078932D89FD1900EB9ED2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37B078762D89FD1400EB9ED2 /* lightek-diy */;
+			targetProxy = 37B078922D89FD1900EB9ED2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37B078992D89FD1900EB9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37B0789A2D89FD1900EB9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37B0789C2D89FD1900EB9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lightek-diy/Preview Content\"";
+				DEVELOPMENT_TEAM = 897QSY45XD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ltek-sys.lightek-diy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37B0789D2D89FD1900EB9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"lightek-diy/Preview Content\"";
+				DEVELOPMENT_TEAM = 897QSY45XD;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ltek-sys.lightek-diy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		37B0789F2D89FD1900EB9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 897QSY45XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ltek-sys.lightek-diyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lightek-diy.app/lightek-diy";
+			};
+			name = Debug;
+		};
+		37B078A02D89FD1900EB9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 897QSY45XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ltek-sys.lightek-diyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/lightek-diy.app/lightek-diy";
+			};
+			name = Release;
+		};
+		37B078A22D89FD1900EB9ED2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 897QSY45XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ltek-sys.lightek-diyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lightek-diy";
+			};
+			name = Debug;
+		};
+		37B078A32D89FD1900EB9ED2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 897QSY45XD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ltek-sys.lightek-diyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "lightek-diy";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37B078722D89FD1400EB9ED2 /* Build configuration list for PBXProject "lightek-diy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B078992D89FD1900EB9ED2 /* Debug */,
+				37B0789A2D89FD1900EB9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37B0789B2D89FD1900EB9ED2 /* Build configuration list for PBXNativeTarget "lightek-diy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B0789C2D89FD1900EB9ED2 /* Debug */,
+				37B0789D2D89FD1900EB9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37B0789E2D89FD1900EB9ED2 /* Build configuration list for PBXNativeTarget "lightek-diyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B0789F2D89FD1900EB9ED2 /* Debug */,
+				37B078A02D89FD1900EB9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37B078A12D89FD1900EB9ED2 /* Build configuration list for PBXNativeTarget "lightek-diyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37B078A22D89FD1900EB9ED2 /* Debug */,
+				37B078A32D89FD1900EB9ED2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37B0786F2D89FD1400EB9ED2 /* Project object */;
+}
