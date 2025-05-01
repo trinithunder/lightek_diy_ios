@@ -30,8 +30,9 @@ platform :ios do
       scheme: "lightek-diy",
       export_method: "app-store",
       export_options: {
-        signingStyle: "automatic",
-        compileBitcode: false
+        provisioningProfiles: {
+          "ltek-sys.lightek-diy" => "LTEKDIY"
+        }
       }
     )
 
