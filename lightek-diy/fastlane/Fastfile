@@ -5,6 +5,12 @@ lane :release do
     commits_count: 50,
     merge_commit_filtering: "exclude_merges"
   )
+  
+  # Boot the iPhone 13 Pro (or any desired device)
+    system("xcrun simctl boot 'iPhone 13 Pro'")
+
+    # Wait for the simulator to boot (optional)
+    sleep(5)
 
   # Get available simulators and filter for booted iPhones
   available_devices = `xcrun simctl list devices`.split("\n")
