@@ -1,7 +1,7 @@
 # fastlane/Snapfile
 
 # Set the devices you'd like to take screenshots for
-devices(["iPhone 8", "iPhone 13"])
+devices(["iPhone 13"])
 
 # Set the language for the screenshots (optional)
 languages(["en-US"])
