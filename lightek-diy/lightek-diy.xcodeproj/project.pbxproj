@@ -14,6 +14,10 @@
 		378C31CB2DADA3E30025A2A5 /* BumbleCloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31CA2DADA3E30025A2A5 /* BumbleCloneView.swift */; };
 		378C31CE2DADAA9A0025A2A5 /* FileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31CD2DADAA9A0025A2A5 /* FileList.swift */; };
 		379D0C932DC3F3ED00E83DE8 /* LTEKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C922DC3F3EC00E83DE8 /* LTEKUITests.swift */; };
+		379D0C952DC4171500E83DE8 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C942DC4171500E83DE8 /* SnapshotHelper.swift */; };
+		379D0C962DC4171500E83DE8 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C942DC4171500E83DE8 /* SnapshotHelper.swift */; };
+		379D0C982DC4178B00E83DE8 /* lightek_diyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C972DC4178B00E83DE8 /* lightek_diyUITests.swift */; };
+		379D0C992DC4178B00E83DE8 /* lightek_diyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C972DC4178B00E83DE8 /* lightek_diyUITests.swift */; };
 		37B0787B2D89FD1400EB9ED2 /* lightek_diyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */; };
 		37B0787D2D89FD1400EB9ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787C2D89FD1400EB9ED2 /* ContentView.swift */; };
 		37B0787F2D89FD1800EB9ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B0787E2D89FD1800EB9ED2 /* Assets.xcassets */; };
@@ -49,6 +53,8 @@
 		378C31CC2DADA7590025A2A5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		378C31CD2DADAA9A0025A2A5 /* FileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileList.swift; path = "lightek-diy/MyPlayground.playground/FileList.swift"; sourceTree = "<group>"; };
 		379D0C922DC3F3EC00E83DE8 /* LTEKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTEKUITests.swift; sourceTree = "<group>"; };
+		379D0C942DC4171500E83DE8 /* SnapshotHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapshotHelper.swift; sourceTree = "<group>"; };
+		379D0C972DC4178B00E83DE8 /* lightek_diyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightek_diyUITests.swift; sourceTree = "<group>"; };
 		37B078772D89FD1400EB9ED2 /* lightek-diy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lightek-diy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightek_diyApp.swift; sourceTree = "<group>"; };
 		37B0787C2D89FD1400EB9ED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +143,8 @@
 			children = (
 				37B0788B2D89FD1900EB9ED2 /* lightek_diyTests.swift */,
 				379D0C922DC3F3EC00E83DE8 /* LTEKUITests.swift */,
+				379D0C942DC4171500E83DE8 /* SnapshotHelper.swift */,
+				379D0C972DC4178B00E83DE8 /* lightek_diyUITests.swift */,
 			);
 			path = "lightek-diyTests";
 			sourceTree = "<group>";
@@ -296,7 +304,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B0788C2D89FD1900EB9ED2 /* lightek_diyTests.swift in Sources */,
+				379D0C982DC4178B00E83DE8 /* lightek_diyUITests.swift in Sources */,
 				379D0C932DC3F3ED00E83DE8 /* LTEKUITests.swift in Sources */,
+				379D0C952DC4171500E83DE8 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +315,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B078982D89FD1900EB9ED2 /* lightek_diyUITestsLaunchTests.swift in Sources */,
+				379D0C992DC4178B00E83DE8 /* lightek_diyUITests.swift in Sources */,
 				37B078962D89FD1900EB9ED2 /* lightek_diyUITests.swift in Sources */,
+				379D0C962DC4171500E83DE8 /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
