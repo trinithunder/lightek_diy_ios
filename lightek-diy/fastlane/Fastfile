@@ -25,17 +25,28 @@ platform :ios do
       languages: ["en-US"],
       output_directory: "./fastlane/screenshots"
     )
+    
+    match(
+      type: "appstore",
+      readonly: true
+    )
 
     build_app(
       scheme: "lightek-diy",
       export_method: "app-store",
-      export_options: {
-        provisioningProfiles: {
-          "ltek-sys.lightek-diy" => "match AppStore ltek-sys.lightek-diy"
-        }
-      },
       xcargs: "-allowProvisioningUpdates"
     )
+
+    # build_app(
+#       scheme: "lightek-diy",
+#       export_method: "app-store",
+#       export_options: {
+#         provisioningProfiles: {
+#           "ltek-sys.lightek-diy" => "match AppStore ltek-sys.lightek-diy"
+#         }
+#       },
+#       xcargs: "-allowProvisioningUpdates"
+#     )
 
     deliver(
       skip_binary_upload: true,
