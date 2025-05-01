@@ -31,9 +31,10 @@ platform :ios do
       export_method: "app-store",
       export_options: {
         provisioningProfiles: {
-          "ltek-sys.lightek-diy" => "LTEKDIY"
+          "ltek-sys.lightek-diy" => "match AppStore ltek-sys.lightek-diy"
         }
-      }
+      },
+      xcargs: "-allowProvisioningUpdates"
     )
 
     deliver(
