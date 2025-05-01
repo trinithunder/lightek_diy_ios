@@ -1,0 +1,8 @@
+app_identifier("ltek-sys.lightek-diy") # Your bundle ID
+apple_id("mhenry1228@gmail.com")               # Your Apple ID
+
+api_key(
+  key_id: ENV["API_KEY_ID"],
+  issuer_id: ENV["API_KEY_ISSUER"],
+  key_filepath: ENV["API_KEY_PATH"]
+)

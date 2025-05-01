@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		378C31C32DADA3040025A2A5 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31C22DADA3040025A2A5 /* MainTabView.swift */; };
+		378C31C52DADA3590025A2A5 /* WhatsAppCloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31C42DADA3590025A2A5 /* WhatsAppCloneView.swift */; };
+		378C31C72DADA39F0025A2A5 /* InstagramCloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31C62DADA39F0025A2A5 /* InstagramCloneView.swift */; };
+		378C31C92DADA3C30025A2A5 /* TikTokCloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31C82DADA3C30025A2A5 /* TikTokCloneView.swift */; };
+		378C31CB2DADA3E30025A2A5 /* BumbleCloneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31CA2DADA3E30025A2A5 /* BumbleCloneView.swift */; };
+		378C31CE2DADAA9A0025A2A5 /* FileList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378C31CD2DADAA9A0025A2A5 /* FileList.swift */; };
+		379D0C932DC3F3ED00E83DE8 /* LTEKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C922DC3F3EC00E83DE8 /* LTEKUITests.swift */; };
 		37B0787B2D89FD1400EB9ED2 /* lightek_diyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */; };
 		37B0787D2D89FD1400EB9ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787C2D89FD1400EB9ED2 /* ContentView.swift */; };
 		37B0787F2D89FD1800EB9ED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37B0787E2D89FD1800EB9ED2 /* Assets.xcassets */; };
@@ -34,6 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		378C31C22DADA3040025A2A5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		378C31C42DADA3590025A2A5 /* WhatsAppCloneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatsAppCloneView.swift; sourceTree = "<group>"; };
+		378C31C62DADA39F0025A2A5 /* InstagramCloneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramCloneView.swift; sourceTree = "<group>"; };
+		378C31C82DADA3C30025A2A5 /* TikTokCloneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTokCloneView.swift; sourceTree = "<group>"; };
+		378C31CA2DADA3E30025A2A5 /* BumbleCloneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BumbleCloneView.swift; sourceTree = "<group>"; };
+		378C31CC2DADA7590025A2A5 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		378C31CD2DADAA9A0025A2A5 /* FileList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FileList.swift; path = "lightek-diy/MyPlayground.playground/FileList.swift"; sourceTree = "<group>"; };
+		379D0C922DC3F3EC00E83DE8 /* LTEKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LTEKUITests.swift; sourceTree = "<group>"; };
 		37B078772D89FD1400EB9ED2 /* lightek-diy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lightek-diy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lightek_diyApp.swift; sourceTree = "<group>"; };
 		37B0787C2D89FD1400EB9ED2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +89,7 @@
 		37B0786E2D89FD1400EB9ED2 = {
 			isa = PBXGroup;
 			children = (
+				378C31CD2DADAA9A0025A2A5 /* FileList.swift */,
 				37B078792D89FD1400EB9ED2 /* lightek-diy */,
 				37B0788A2D89FD1900EB9ED2 /* lightek-diyTests */,
 				37B078942D89FD1900EB9ED2 /* lightek-diyUITests */,
@@ -96,6 +112,12 @@
 			children = (
 				37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */,
 				37B0787C2D89FD1400EB9ED2 /* ContentView.swift */,
+				378C31C22DADA3040025A2A5 /* MainTabView.swift */,
+				378C31C82DADA3C30025A2A5 /* TikTokCloneView.swift */,
+				378C31CA2DADA3E30025A2A5 /* BumbleCloneView.swift */,
+				378C31CC2DADA7590025A2A5 /* MyPlayground.playground */,
+				378C31C42DADA3590025A2A5 /* WhatsAppCloneView.swift */,
+				378C31C62DADA39F0025A2A5 /* InstagramCloneView.swift */,
 				37B0787E2D89FD1800EB9ED2 /* Assets.xcassets */,
 				37B078802D89FD1800EB9ED2 /* Preview Content */,
 			);
@@ -114,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				37B0788B2D89FD1900EB9ED2 /* lightek_diyTests.swift */,
+				379D0C922DC3F3EC00E83DE8 /* LTEKUITests.swift */,
 			);
 			path = "lightek-diyTests";
 			sourceTree = "<group>";
@@ -257,8 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378C31CB2DADA3E30025A2A5 /* BumbleCloneView.swift in Sources */,
 				37B0787D2D89FD1400EB9ED2 /* ContentView.swift in Sources */,
 				37B0787B2D89FD1400EB9ED2 /* lightek_diyApp.swift in Sources */,
+				378C31C72DADA39F0025A2A5 /* InstagramCloneView.swift in Sources */,
+				378C31C52DADA3590025A2A5 /* WhatsAppCloneView.swift in Sources */,
+				378C31CE2DADAA9A0025A2A5 /* FileList.swift in Sources */,
+				378C31C92DADA3C30025A2A5 /* TikTokCloneView.swift in Sources */,
+				378C31C32DADA3040025A2A5 /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B0788C2D89FD1900EB9ED2 /* lightek_diyTests.swift in Sources */,
+				379D0C932DC3F3ED00E83DE8 /* LTEKUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

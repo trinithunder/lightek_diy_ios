@@ -1,0 +1,47 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Complete release pipeline: bump, screenshots, changelog, build, metadata, upload, review"
+  lane :release do
+    increment_build_number
+
+    changelog_from_git_commits(
+      commits_count: 50,
+      merge_commit_filtering: "exclude_merges"
+    )
+
+    capture_screenshots
+
+    build_app(scheme: "YourAppScheme")
+
+    deliver(
+      skip_binary_upload: true,
+      skip_screenshots: false,
+      force: true
+    )
+
+    upload_to_testflight(
+      changelog: lane_context[:FL_CHANGELOG]
+    )
+
+    submit_for_review(
+      automatic_release: false
+    )
+  end
+end
+
