@@ -1,3 +1,66 @@
+lane :release do
+  increment_build_number
+
+  changelog_from_git_commits(
+    commits_count: 50,
+    merge_commit_filtering: "exclude_merges"
+  )
+
+  # Get available simulators and filter for booted iPhones
+  available_devices = `xcrun simctl list devices`.split("\n")
+  booted_devices = available_devices.select { |line| line.include?("iPhone") && line.include?("Booted") }
+
+  # Debug: Output available devices and booted devices
+  puts "Available Devices: #{available_devices}"
+  puts "Booted Devices: #{booted_devices}"
+
+  if booted_devices.empty?
+    UI.user_error!("No booted iPhone devices found")
+  end
+
+  # Extract just the device names (without the OS versions)
+  device_names = booted_devices.map { |line| line.split(" (").first.strip }
+
+  # Debug: Output device names
+  puts "Device Names: #{device_names}"
+
+  # If no devices found, raise an error
+  if device_names.empty?
+    UI.user_error!("No iPhone devices available for screenshots")
+  end
+
+  # Sort the devices and pick the latest one (you can customize this)
+  latest_device = device_names.max_by { |device| device }
+
+  # Debug: Output the latest device selected
+  puts "Latest Device: #{latest_device}"
+
+  # Set the latest device for screenshot capture
+  capture_screenshots(
+    devices: [latest_device],
+    languages: ["en-US"],
+    locale: "en-US",
+    output_directory: "./fastlane/screenshots"
+  )
+
+  build_app(scheme: "lightek-diy")
+
+  deliver(
+    skip_binary_upload: true,
+    skip_screenshots: false,
+    force: true
+  )
+
+  upload_to_testflight(
+    changelog: lane_context[:FL_CHANGELOG]
+  )
+
+  submit_for_review(
+    automatic_release: false
+  )
+end
+
+
 # # This file contains the fastlane.tools configuration
 # # You can find the documentation at https://docs.fastlane.tools
 # #
@@ -44,48 +107,48 @@
 #     )
 #   end
 # end
+##
 #
-
-lane :release do
-  increment_build_number
-
-  changelog_from_git_commits(
-    commits_count: 50,
-    merge_commit_filtering: "exclude_merges"
-  )
-
-  # Get available simulators and filter for booted iPhones
-  available_devices = `xcrun simctl list devices`.split("\n")
-  booted_devices = available_devices.select { |line| line.include?("iPhone") && line.include?("Booted") }
-
-  # Extract just the device names (without the OS versions)
-  device_names = booted_devices.map { |line| line.split(" (").first.strip }
-
-  # Sort the devices and pick the latest one (you can customize this)
-  latest_device = device_names.max_by { |device| device }
-
-  # Set the latest device for screenshot capture
-  capture_screenshots(
-    devices: [latest_device],
-    languages: ["en-US"],
-    locale: "en-US",
-    output_directory: "./fastlane/screenshots"
-  )
-
-  build_app(scheme: "lightek-diy")
-
-  deliver(
-    skip_binary_upload: true,
-    skip_screenshots: false,
-    force: true
-  )
-
-  upload_to_testflight(
-    changelog: lane_context[:FL_CHANGELOG]
-  )
-
-  submit_for_review(
-    automatic_release: false
-  )
-end
+# lane :release do
+#   increment_build_number
+#
+#   changelog_from_git_commits(
+#     commits_count: 50,
+#     merge_commit_filtering: "exclude_merges"
+#   )
+#
+#   # Get available simulators and filter for booted iPhones
+#   available_devices = `xcrun simctl list devices`.split("\n")
+#   booted_devices = available_devices.select { |line| line.include?("iPhone") && line.include?("Booted") }
+#
+#   # Extract just the device names (without the OS versions)
+#   device_names = booted_devices.map { |line| line.split(" (").first.strip }
+#
+#   # Sort the devices and pick the latest one (you can customize this)
+#   latest_device = device_names.max_by { |device| device }
+#
+#   # Set the latest device for screenshot capture
+#   capture_screenshots(
+#     devices: [latest_device],
+#     languages: ["en-US"],
+#     locale: "en-US",
+#     output_directory: "./fastlane/screenshots"
+#   )
+#
+#   build_app(scheme: "lightek-diy")
+#
+#   deliver(
+#     skip_binary_upload: true,
+#     skip_screenshots: false,
+#     force: true
+#   )
+#
+#   upload_to_testflight(
+#     changelog: lane_context[:FL_CHANGELOG]
+#   )
+#
+#   submit_for_review(
+#     automatic_release: false
+#   )
+# end
 
