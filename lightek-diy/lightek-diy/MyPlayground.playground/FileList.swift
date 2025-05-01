@@ -21,62 +21,62 @@ import SwiftUI
 // MainTabView.swift
 import SwiftUI
 
-struct MainTabView: View {
-    var body: some View {
-        TabView {
-            WhatsAppCloneView()
-                .tabItem { Label("Chat", systemImage: "message") }
-
-            InstagramCloneView()
-                .tabItem { Label("Feed", systemImage: "photo.on.rectangle") }
-
-            TikTokCloneView()
-                .tabItem { Label("Reels", systemImage: "play.rectangle.fill") }
-
-            BumbleCloneView()
-                .tabItem { Label("Match", systemImage: "heart.circle") }
-        }
-    }
-}
+//struct MainTabView: View {
+//    var body: some View {
+//        TabView {
+//            WhatsAppCloneView()
+//                .tabItem { Label("Chat", systemImage: "message") }
+//
+//            InstagramCloneView()
+//                .tabItem { Label("Feed", systemImage: "photo.on.rectangle") }
+//
+//            TikTokCloneView()
+//                .tabItem { Label("Reels", systemImage: "play.rectangle.fill") }
+//
+//            BumbleCloneView()
+//                .tabItem { Label("Match", systemImage: "heart.circle") }
+//        }
+//    }
+//}
 
 // MARK: - 📲 Instagram Clone
-struct InstagramCloneView: View {
-    var body: some View {
-        NavigationView {
-            List(0..<10) { index in
-                VStack(alignment: .leading) {
-                    Text("@user\(index)")
-                        .font(.headline)
-                    Rectangle()
-                        .fill(Color.gray.opacity(0.3))
-                        .frame(height: 200)
-                        .overlay(Text("Post \(index)").foregroundColor(.black))
-                }
-                .padding()
-            }
-            .navigationTitle("Feed")
-        }
-    }
-}
+//struct InstagramCloneView: View {
+//    var body: some View {
+//        NavigationView {
+//            List(0..<10) { index in
+//                VStack(alignment: .leading) {
+//                    Text("@user\(index)")
+//                        .font(.headline)
+//                    Rectangle()
+//                        .fill(Color.gray.opacity(0.3))
+//                        .frame(height: 200)
+//                        .overlay(Text("Post \(index)").foregroundColor(.black))
+//                }
+//                .padding()
+//            }
+//            .navigationTitle("Feed")
+//        }
+//    }
+//}
 
 // MARK: - 📲 TikTok Clone
-struct TikTokCloneView: View {
-    var body: some View {
-        TabView {
-            ForEach(0..<5) { i in
-                ZStack {
-                    Color.black
-                    Text("Video \(i)")
-                        .foregroundColor(.white)
-                        .font(.largeTitle)
-                }
-                .tag(i)
-            }
-        }
-        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
-        .ignoresSafeArea()
-    }
-}
+//struct TikTokCloneView: View {
+//    var body: some View {
+//        TabView {
+//            ForEach(0..<5) { i in
+//                ZStack {
+//                    Color.black
+//                    Text("Video \(i)")
+//                        .foregroundColor(.white)
+//                        .font(.largeTitle)
+//                }
+//                .tag(i)
+//            }
+//        }
+//        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+//        .ignoresSafeArea()
+//    }
+//}
 
 // MARK: - 🧠 AuthenticationService
 class AuthService {
@@ -98,35 +98,35 @@ class AuthService {
 }
 
 // MARK: - 💬 WhatsApp Clone
-struct WhatsAppCloneView: View {
-    @ObservedObject var messageService = MessageService()
-
-    var body: some View {
-        NavigationView {
-            List(messageService.messages) { msg in
-                HStack {
-                    if msg.isMine { Spacer() }
-                    VStack(alignment: .leading) {
-                        if let content = msg.content {
-                            Text(content)
-                        }
-                        if let imageURL = msg.imageURL {
-                            Text("📷 Image: \(imageURL)")
-                        }
-                    }
-                    .padding()
-                    .background(msg.isMine ? Color.blue.opacity(0.2) : Color.gray.opacity(0.2))
-                    .cornerRadius(8)
-                    if !msg.isMine { Spacer() }
-                }
-            }
-            .navigationTitle("Chat")
-            .onAppear {
-                messageService.startPolling(chatID: "123")
-            }
-        }
-    }
-}
+//struct WhatsAppCloneView: View {
+//    @ObservedObject var messageService = MessageService()
+//
+//    var body: some View {
+//        NavigationView {
+//            List(messageService.messages) { msg in
+//                HStack {
+//                    if msg.isMine { Spacer() }
+//                    VStack(alignment: .leading) {
+//                        if let content = msg.content {
+//                            Text(content)
+//                        }
+//                        if let imageURL = msg.imageURL {
+//                            Text("📷 Image: \(imageURL)")
+//                        }
+//                    }
+//                    .padding()
+//                    .background(msg.isMine ? Color.blue.opacity(0.2) : Color.gray.opacity(0.2))
+//                    .cornerRadius(8)
+//                    if !msg.isMine { Spacer() }
+//                }
+//            }
+//            .navigationTitle("Chat")
+//            .onAppear {
+//                messageService.startPolling(chatID: "123")
+//            }
+//        }
+//    }
+//}
 
 class MessageService: ObservableObject {
     @Published var messages: [Message] = []
@@ -230,55 +230,55 @@ struct VideoRecorderView: UIViewControllerRepresentable {
 }
 
 // MARK: - ❤️ Bumble Engine w/ Animations + Likes
-struct BumbleCloneView: View {
-    @State private var cards: [String] = ["Alice", "Bob", "Cara"]
-    @State private var offset: CGSize = .zero
-    @State private var liked: [String] = []
-    @State private var disliked: [String] = []
-
-    var body: some View {
-        ZStack {
-            ForEach(cards, id: \.",") { name in
-                CardView(name: name)
-                    .offset(offset)
-                    .gesture(DragGesture()
-                        .onChanged { gesture in
-                            self.offset = gesture.translation
-                        }
-                        .onEnded { value in
-                            if value.translation.width < -100 {
-                                swipeLeft(name: name)
-                            } else if value.translation.width > 100 {
-                                swipeRight(name: name)
-                            }
-                            self.offset = .zero
-                        })
-                    .animation(.spring(), value: offset)
-            }
-        }
-    }
-
-    func swipeLeft(name: String) {
-        disliked.append(name)
-        cards.removeAll { $0 == name }
-        likeDislike(name: name, liked: false)
-    }
-
-    func swipeRight(name: String) {
-        liked.append(name)
-        cards.removeAll { $0 == name }
-        likeDislike(name: name, liked: true)
-    }
-
-    func likeDislike(name: String, liked: Bool) {
-        guard let url = URL(string: "https://your-api.com/matches") else { return }
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.httpBody = try? JSONEncoder().encode(["name": name, "liked": liked])
-        URLSession.shared.dataTask(with: request) { _, _, _ in }.resume()
-    }
-}
+//struct BumbleCloneView: View {
+//    @State private var cards: [String] = ["Alice", "Bob", "Cara"]
+//    @State private var offset: CGSize = .zero
+//    @State private var liked: [String] = []
+//    @State private var disliked: [String] = []
+//
+//    var body: some View {
+//        ZStack {
+//            ForEach(cards, id: \.",") { name in
+//                CardView(name: name)
+//                    .offset(offset)
+//                    .gesture(DragGesture()
+//                        .onChanged { gesture in
+//                            self.offset = gesture.translation
+//                        }
+//                        .onEnded { value in
+//                            if value.translation.width < -100 {
+//                                swipeLeft(name: name)
+//                            } else if value.translation.width > 100 {
+//                                swipeRight(name: name)
+//                            }
+//                            self.offset = .zero
+//                        })
+//                    .animation(.spring(), value: offset)
+//            }
+//        }
+//    }
+//
+//    func swipeLeft(name: String) {
+//        disliked.append(name)
+//        cards.removeAll { $0 == name }
+//        likeDislike(name: name, liked: false)
+//    }
+//
+//    func swipeRight(name: String) {
+//        liked.append(name)
+//        cards.removeAll { $0 == name }
+//        likeDislike(name: name, liked: true)
+//    }
+//
+//    func likeDislike(name: String, liked: Bool) {
+//        guard let url = URL(string: "https://your-api.com/matches") else { return }
+//        var request = URLRequest(url: url)
+//        request.httpMethod = "POST"
+//        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+//        request.httpBody = try? JSONEncoder().encode(["name": name, "liked": liked])
+//        URLSession.shared.dataTask(with: request) { _, _, _ in }.resume()
+//    }
+//}
 
 struct CardView: View {
     let name: String
