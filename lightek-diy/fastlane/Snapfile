@@ -1,13 +1,13 @@
-devices([
-  "iPhone 14 Pro",
-  "iPhone SE (3rd generation)",
-  "iPad Pro (12.9-inch) (6th generation)"
-])
+# fastlane/Snapfile
 
+# Set the devices you'd like to take screenshots for
+devices(["iPhone 8", "iPhone 13"])
+
+# Set the language for the screenshots (optional)
 languages(["en-US"])
 
+# Define the scheme name
 scheme("lightek-diy")
+
+# Define the output directory for screenshots
 output_directory("./fastlane/screenshots")
-clear_previous_screenshots(true)
-reinstall_app(true)
-erase_simulator(true)
