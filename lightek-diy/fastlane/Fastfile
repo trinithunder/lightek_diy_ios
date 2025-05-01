@@ -27,7 +27,7 @@ platform :ios do
 
     capture_screenshots
 
-    build_app(scheme: "YourAppScheme")
+    build_app(scheme: "lightek-diy")
 
     deliver(
       skip_binary_upload: true,
