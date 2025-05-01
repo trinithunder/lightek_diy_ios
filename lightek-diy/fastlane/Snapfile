@@ -1,12 +1,23 @@
+# # fastlane/Snapfile
+#
+# # Set the devices you'd like to take screenshots for
+# devices([
+#   "iPhone 13 Pro (16.0)",
+#   "iPhone SE (3rd generation) (16.0)"
+# ])
+#
+# # Set the language for the screenshots (optional)
+# languages(["en-US"])
+#
+# # Define the scheme name
+# scheme("lightek-diy")
+#
+# # Define the output directory for screenshots
+# output_directory("./fastlane/screenshots")
+
 # fastlane/Snapfile
 
-# Set the devices you'd like to take screenshots for
-devices([
-  "iPhone 13 Pro (16.0)",
-  "iPhone SE (3rd generation) (16.0)"
-])
-
-# Set the language for the screenshots (optional)
+# No need to specify devices, as it's handled in the Fastfile now
 languages(["en-US"])
 
 # Define the scheme name
@@ -14,3 +25,4 @@ scheme("lightek-diy")
 
 # Define the output directory for screenshots
 output_directory("./fastlane/screenshots")
+

@@ -1,47 +1,91 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
+# # This file contains the fastlane.tools configuration
+# # You can find the documentation at https://docs.fastlane.tools
+# #
+# # For a list of all available actions, check out
+# #
+# #     https://docs.fastlane.tools/actions
+# #
+# # For a list of all available plugins, check out
+# #
+# #     https://docs.fastlane.tools/plugins/available-plugins
+# #
 #
-# For a list of all available actions, check out
+# # Uncomment the line if you want fastlane to automatically update itself
+# # update_fastlane
 #
-#     https://docs.fastlane.tools/actions
+# default_platform(:ios)
 #
-# For a list of all available plugins, check out
+# platform :ios do
+#   desc "Complete release pipeline: bump, screenshots, changelog, build, metadata, upload, review"
+#   lane :release do
+#     increment_build_number
 #
-#     https://docs.fastlane.tools/plugins/available-plugins
+#     changelog_from_git_commits(
+#       commits_count: 50,
+#       merge_commit_filtering: "exclude_merges"
+#     )
+#
+#     capture_screenshots
+#
+#     build_app(scheme: "lightek-diy")
+#
+#     deliver(
+#       skip_binary_upload: true,
+#       skip_screenshots: false,
+#       force: true
+#     )
+#
+#     upload_to_testflight(
+#       changelog: lane_context[:FL_CHANGELOG]
+#     )
+#
+#     submit_for_review(
+#       automatic_release: false
+#     )
+#   end
+# end
 #
 
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
+lane :release do
+  increment_build_number
 
-default_platform(:ios)
+  changelog_from_git_commits(
+    commits_count: 50,
+    merge_commit_filtering: "exclude_merges"
+  )
 
-platform :ios do
-  desc "Complete release pipeline: bump, screenshots, changelog, build, metadata, upload, review"
-  lane :release do
-    increment_build_number
+  # Get available simulators and filter for booted iPhones
+  available_devices = `xcrun simctl list devices`.split("\n")
+  booted_devices = available_devices.select { |line| line.include?("iPhone") && line.include?("Booted") }
 
-    changelog_from_git_commits(
-      commits_count: 50,
-      merge_commit_filtering: "exclude_merges"
-    )
+  # Extract just the device names (without the OS versions)
+  device_names = booted_devices.map { |line| line.split(" (").first.strip }
 
-    capture_screenshots
+  # Sort the devices and pick the latest one (you can customize this)
+  latest_device = device_names.max_by { |device| device }
 
-    build_app(scheme: "lightek-diy")
+  # Set the latest device for screenshot capture
+  capture_screenshots(
+    devices: [latest_device],
+    languages: ["en-US"],
+    locale: "en-US",
+    output_directory: "./fastlane/screenshots"
+  )
 
-    deliver(
-      skip_binary_upload: true,
-      skip_screenshots: false,
-      force: true
-    )
+  build_app(scheme: "lightek-diy")
 
-    upload_to_testflight(
-      changelog: lane_context[:FL_CHANGELOG]
-    )
+  deliver(
+    skip_binary_upload: true,
+    skip_screenshots: false,
+    force: true
+  )
 
-    submit_for_review(
-      automatic_release: false
-    )
-  end
+  upload_to_testflight(
+    changelog: lane_context[:FL_CHANGELOG]
+  )
+
+  submit_for_review(
+    automatic_release: false
+  )
 end
 
