@@ -48,9 +48,19 @@ lane :release do
     #locale: "en-US",
     output_directory: "./fastlane/screenshots"
   )
-
-  build_app(scheme: "lightek-diy")
-
+  
+  build_app(
+    scheme: "lightek-diy",
+    export_method: "app-store", # or "development" or "ad-hoc" based on your needs
+    export_options: {
+      compileBitcode: false,
+      manageAppVersionAndBuildNumber: true,
+      signingStyle: "automatic",
+      provisioningProfiles: {} # empty hash signals automatic provisioning
+    },
+    export_xcargs: "-allowProvisioningUpdates"
+  )
+  
   deliver(
     skip_binary_upload: true,
     skip_screenshots: false,
