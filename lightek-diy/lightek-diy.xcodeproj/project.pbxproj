@@ -16,7 +16,6 @@
 		379D0C932DC3F3ED00E83DE8 /* LTEKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C922DC3F3EC00E83DE8 /* LTEKUITests.swift */; };
 		379D0C952DC4171500E83DE8 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C942DC4171500E83DE8 /* SnapshotHelper.swift */; };
 		379D0C962DC4171500E83DE8 /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C942DC4171500E83DE8 /* SnapshotHelper.swift */; };
-		379D0C982DC4178B00E83DE8 /* lightek_diyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C972DC4178B00E83DE8 /* lightek_diyUITests.swift */; };
 		379D0C992DC4178B00E83DE8 /* lightek_diyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379D0C972DC4178B00E83DE8 /* lightek_diyUITests.swift */; };
 		37B0787B2D89FD1400EB9ED2 /* lightek_diyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787A2D89FD1400EB9ED2 /* lightek_diyApp.swift */; };
 		37B0787D2D89FD1400EB9ED2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B0787C2D89FD1400EB9ED2 /* ContentView.swift */; };
@@ -304,7 +303,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37B0788C2D89FD1900EB9ED2 /* lightek_diyTests.swift in Sources */,
-				379D0C982DC4178B00E83DE8 /* lightek_diyUITests.swift in Sources */,
 				379D0C932DC3F3ED00E83DE8 /* LTEKUITests.swift in Sources */,
 				379D0C952DC4171500E83DE8 /* SnapshotHelper.swift in Sources */,
 			);
@@ -388,7 +386,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -443,7 +441,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
