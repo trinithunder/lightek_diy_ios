@@ -42,10 +42,10 @@ lane :release do
   puts "Latest Device: #{latest_device}"
 
   # Set the latest device for screenshot capture
-  capture_screenshots(
+  snapshot(
     devices: [latest_device],
     languages: ["en-US"],
-    locale: "en-US",
+    #locale: "en-US",
     output_directory: "./fastlane/screenshots"
   )
 
